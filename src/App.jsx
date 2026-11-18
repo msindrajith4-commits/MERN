@@ -29,7 +29,7 @@ setTimeout(() => {
         <Route path='/contact' element={<Contact/>} />
         <Route path='/book' element={<Books/>} />
         <Route path='/login' element={<Auth/>} />
-        <Route path='/register' element={<Auth/>} />
+        <Route path='/register' element={<Auth inside/>} />
 
         <Route path='/profile/:id' element={<Profile/>} />
         <Route path='/books/:id' element={<View/>} />
