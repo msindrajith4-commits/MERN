@@ -27,7 +27,7 @@ setTimeout(() => {
       <Routes>
         <Route path='/' element={isLoading?<Preloader/>:<Home/>} />
         <Route path='/contact' element={<Contact/>} />
-        <Route path='/book' element={<Books/>} />
+        <Route path='/books' element={<Books/>} />
         <Route path='/login' element={<Auth/>} />
         <Route path='/register' element={<Auth inside/>} />
 

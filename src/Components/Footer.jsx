@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaArrowRight, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -13,20 +14,20 @@ function Footer() {
         <p className='my-5'>stay update with our latest trends</p>
         <div className='flex'>
           <input type="text" placeholder='E Mail' className='border bg-white text-black p-2'/>
-          <button className='bg-yellow 500 p-2'> <FaArrowRight /></button>
+          {/* Fixed: removed the space in bg-yellow-500 and added text-black */}
+          <button className='bg-yellow-500 text-black p-2'> <FaArrowRight /></button>
         </div>
       </div>
 
-<div className='flex flex-col md:mt -0 mt-5'>
-  <h4 className='font-bold'>FOLLOW US</h4>
-  <p className='my-5'>LET US BE SOCIAL</p>
-  <div className='flex'>
-    <FaFacebookF />
-    <FaInstagram />
-    <FaTwitter />
-
-  </div>
-</div>
+      <div className='flex flex-col md:mt-0 mt-5'>
+        <h4 className='font-bold'>FOLLOW US</h4>
+        <p className='my-5'>LET US BE SOCIAL</p>
+        <div className='flex gap-4'>
+          <FaFacebookF />
+          <FaInstagram />
+          <FaTwitter />
+        </div>
+      </div>
     </div>
   )
 }
